@@ -8,6 +8,7 @@ Drive links to data :
   - [Combined reviews per genre](https://drive.google.com/drive/folders/1r1As9zozjQht2e_L_vK5lIVOCrO7_Qgs?usp=sharing)
   - [Sentiment scores per genre](https://drive.google.com/drive/folders/1XZ3HH2eInnp18Iis4iesKaZ1se6hHJWw?usp=sharing)
   - [Sentiment scores per movie](https://drive.google.com/drive/folders/1n3dwG1No4Fro7Vg1abkr6p0OjslvvoRx?usp=sharing)
+  - [IMDB Movie metadata with sentiments (combined across genres)](https://drive.google.com/file/d/1uwBLZdmYUoYSTYuzD0IMpGynmmXvPcRS/view?usp=sharing)
 
 - Twitter
   - [Movie review files grouped by genre](https://drive.google.com/drive/folders/1OrEAQ8Yjs9PObIBwhEtd-kFDOIWsscO8?usp=sharing)
