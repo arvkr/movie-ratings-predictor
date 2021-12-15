@@ -14,3 +14,4 @@ Drive links to data :
   - [Movie review files grouped by genre](https://drive.google.com/drive/folders/1OrEAQ8Yjs9PObIBwhEtd-kFDOIWsscO8?usp=sharing)
   - [Combined reviews per genre](https://drive.google.com/drive/folders/1ai3t2gkrGUYkkJ2BLOVw7Xh1xhbLZHZs?usp=sharing)
   - [Sentiment scores per genre](https://drive.google.com/drive/folders/1zKifW6waZbYgaF7nlNpwu8mn2Skoz1zr?usp=sharing)
+  - [Sentiment scores per movie](https://drive.google.com/drive/folders/1V9PdsOWIT9O_U0-ARpiQNRlhGo5X8MKc?usp=sharing)
