@@ -1,10 +1,10 @@
 # movie-ratings-predictor
 Prediction of IMDb ratings of a movie using IMDb metadata and sentiment scores of IMDb reviews and Twitter Data
 
-Team Members: -
-Asmita Kumar (ak4581)
-Shikha Asrani (sa3864)
-Arvind Kanesan Rathna (ak4728)
+**Team Members: -**
+* Asmita Kumar (ak4581)
+* Shikha Asrani (sa3864)
+* Arvind Kanesan Rathna (ak4728)
 
 ## Visualization Dashboard
 The dashboard used Django Framework and D3.js for creating visualizations
