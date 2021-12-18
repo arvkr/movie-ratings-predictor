@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dashboard</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Movie Ratings Predictor</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/results">Results</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/data">Data</a>
+        </li>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="/trends">Trends</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<br/>
+
+<form name='filter' method="post" action="/home/">
+    {% csrf_token %}
+    {{ form }}
+    <div style="display: flex;">
+<select class="form-select offset-md-2" aria-label=".form-select-lg example"
+style="width:50%;" id="movie_name" name="movie_name">
+  <option value="1" {% if movie == 1  %} selected="selected" {% endif %}>A Quiet Place Part II</option>
+  <option value="2" {% if movie == 2  %} selected="selected" {% endif %}> Dune</option>
+  <option value="3" {% if movie == 3  %} selected="selected" {% endif %}>No Time To Die</option>
+  <option value="4" {% if movie == 4  %} selected="selected" {% endif %}>Spider Man: No way home</option>
+  <option value="5" {% if movie == 5  %} selected="selected" {% endif %}>Black Widow</option>
+</select>
+    <input id="filter" class="btn btn-primary" type="submit" value="Submit" />
+    </div>
+</form>
+
+<br/>
+
+<div class="col-md-8 offset-md-2" style="overflow-y: scroll;height: 500px;">
+<table class="table table-bordered" style="overflow-y: scroll;height: 500px;">
+    <thead>
+        <tr>
+            {% for k in header %}
+            <th>{{k}}</th>
+            {% endfor %}
+        </tr>
+    </thead>
+    <tbody>
+        {% for r in items %}
+            <tr>
+                <td>{{r}}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</div>
+
+
+</body>
+</html>
