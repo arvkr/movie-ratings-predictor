@@ -1,5 +1,35 @@
 # movie-ratings-predictor
+Prediction of IMDb ratings of a movie using IMDb metadata and sentiment scores of IMDb reviews and Twitter Data
 
+Team Members: -
+Asmita Kumar (ak4581)
+Shikha Asrani (sa3864)
+Arvind Kanesan Rathna (ak4728)
+
+## Visualization Dashboard
+The dashboard used Django Framework and D3.js for creating visualizations
+The following packages need to be installed
+
+```
+pip3 install Django
+pip3 install pandas-gbq -U
+```
+Add your service account credentials to access Google BigQuery in view.py
+
+```
+CREDENTIAL_PATH = 'XXXXX'
+credentials = service_account.Credentials.from_service_account_file(CREDENTIAL_PATH)
+```
+
+To run the server, run the following command in terminal and go to http://127.0.0.1:8000/data/
+
+```
+python3 manage.py runserver
+```
+
+<br>
+
+## Data Collected
 
 Drive links to data :
 
