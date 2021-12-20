@@ -29,6 +29,14 @@ python3 manage.py runserver
 
 <br>
 
+## Twitter Scraping
+There are two ways to collect twitter data. One of them is to collect streaming data and the other is to use Twitter API to fetch tweets using a query.
+
+### Twitter Streaming
+To fetch streaming data, run the twitter-client.ipynb in one terminal of a dataproc cluster and run twitter-stream.ipynp in the other terminal. The fetched tweets are saved in BigQuery Table on GCP.
+
+### Twitter API
+
 ## Data Collected
 
 Drive links to data :
