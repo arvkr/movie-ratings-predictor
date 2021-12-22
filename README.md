@@ -43,6 +43,12 @@ q = "dune OR DuneMovie OR RealChalamet"
 ```
 To run for another movie, just modify the query and run the cell (twitter_scrape.ipynb)
 
+## Regression Model:
+
+* As mentioned in the presentation and report, we have experimented with 5 different types of regression models along with seeing which features are effective for making predictions.
+* To reproduce the model, please follow the instructions within `regression_modeling.ipynb` to build the models. 
+* The training data used can be downloaded from [here](https://drive.google.com/file/d/1V5XVmcmhyeDd3FAYsovQST0D0DikkpMp/view?usp=sharing).
+
 ## Data Collected
 
 Drive links to data :
