@@ -9,6 +9,7 @@ CREDENTIAL_PATH = 'Write the credential path for Service Account'
 credentials = service_account.Credentials.from_service_account_file(CREDENTIAL_PATH)
 
 
+# Fetch tweets from BigQuery and display them on the home screen
 def home(request):
     table_name = 2
     if request.method == 'POST':
@@ -28,6 +29,7 @@ def home(request):
     return render(request, 'index.html', context)
 
 
+# Fetch tweets from BigQuery
 def get_tweets(table_name):
     pandas_gbq.context.credentials = credentials
     pandas_gbq.context.project = "ak4581-6893"
@@ -45,16 +47,19 @@ def get_tweets(table_name):
     return data_list
 
 
+# Render data visualizations (histograms, pie-charts)
 def data_view(request):
     context = {}
     return render(request, 'data-view.html', context)
 
 
+# Render trends: correlation between IMDb ratings and sentiments
 def trends(request):
     context = {}
     return render(request, 'trends.html', context)
 
 
+# Display results of models and predicted ratings of movies
 def result_view(request):
     context = {}
     headers = ["Model Name", "RMSE_IMDB_Twitter", "RMSE_IMDB", "RMSE_Twitter", "RMSE_no_sentiment", "RMSE_no_genre"]
@@ -82,6 +87,7 @@ def result_view(request):
     return render(request, 'results.html', context)
 
 
+# Fetch predicted movie ratings from BigQuery
 def get_ratings(movie_name):
     pandas_gbq.context.credentials = credentials
     pandas_gbq.context.project = "ak4581-6893"
@@ -107,6 +113,7 @@ def get_ratings(movie_name):
     return data_list
 
 
+# Fetch RMSE values of models from BigQuery
 def get_rmse_values():
     pandas_gbq.context.credentials = credentials
     pandas_gbq.context.project = "ak4581-6893"
