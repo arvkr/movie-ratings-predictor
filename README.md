@@ -50,6 +50,10 @@ To run for another movie, just modify the query and run the cell (twitter_scrape
 * The training data used can be downloaded from [here](https://drive.google.com/file/d/1V5XVmcmhyeDd3FAYsovQST0D0DikkpMp/view?usp=sharing).
 * The only dependency needed is PySpark. We used GCP DataProc cluster for this purpose.
 
+## Sentiment analysis pipeline.
+
+The sentiment analysis pipeline notebooks include the code that was used for cleaning up the IMDB and Twitter data and performing sentiment analysis on it. The final scores are shared in the google drive location.
+
 ## Data Collected
 
 Drive links to data :
