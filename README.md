@@ -36,6 +36,12 @@ There are two ways to collect twitter data. One of them is to collect streaming 
 To fetch streaming data, run the twitter-client.ipynb in one terminal of a dataproc cluster and run twitter-stream.ipynp in the other terminal. The fetched tweets are saved in BigQuery Table on GCP.
 
 ### Twitter API
+To scrape tweets from Twitter, we used the tweepy library. To scrape tweets for a particular movie, pass in the query variable "q" to TwitterClient().get_tweets(q). The query variable can consist of the keywords present in the tweet. For example if we want to get tweets related to Dune and we want the tweets to have either "Dune" or "DuneMovie" or "RealChalamet" (actor in the movie) in its content we could use the following query.
+
+```
+q = "dune OR DuneMovie OR RealChalamet" 
+```
+To run for another movie, just modify the query and run the cell (twitter_scrape.ipynb)
 
 ## Data Collected
 
